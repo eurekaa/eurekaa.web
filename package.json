@@ -1,0 +1,24 @@
+{
+  "name": "eurekaa.web",
+  "version": "0.1.0",
+  "description": "eurekaa web site",
+  "author": {
+    "name": "Stefano Graziato"
+  },
+  "license": "BSD",
+  "main": "",
+  "scripts": {
+    "compile": "D:/eurekaa/progetti/continuum2.js/bin/bin/continuum.cmd"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/eurekaa/eurekaa.web.git"
+  },
+  "preferGlobal": true,
+  "dependencies": {
+      "continuum.js": "*"
+  },
+  "readmeFilename": "README.md",
+  "_id": "eurekaa.web@0.1",
+  "_from": "eurekaa.web@"
+}

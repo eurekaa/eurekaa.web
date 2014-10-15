@@ -1,0 +1,22 @@
+html
+    title eurekaa
+    meta(name='viewport', right='width=device-width', initial-scale='1.0')
+    meta(charset='utf-8')
+    script(src='scripts/libs/require.js', data-main='scripts/index')
+    link(rel='stylesheet', type='text/css', href='styles/fonts.css')
+    link(rel='stylesheet', type='text/css', href='styles/index.css')
+        
+    body
+
+        require('menu', 'data/menu.json')
+        header: nav: ul
+            li: a #{menu.home}
+            li: a #{menu.who}
+            li: a #{menu.curriculum}
+            li: a #{menu.projects}
+            li: a #{menu.contacts}
+        
+        main
+            p eurekaa.it è un sito fighissimo!
+        
+        footer

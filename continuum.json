@@ -1,0 +1,42 @@
+{
+    "input": {
+        "path": "src"
+    },
+    "output": {
+        "path": "bin"
+    },
+    "temp": {
+        "path": "tmp"
+    },
+    "source_map": {
+        "path": "tmp/map"
+    },
+    "cache": {
+        "enabled": true,
+        "path": "tmp/cache"
+    },
+    "log": {
+        "levels": {
+            "console": "DEBUG",
+            "file": "OFF"
+        }
+    },
+    "compilation": {
+        "compilers": {
+            "sass": {
+                "compass": {
+                    "options": {
+                        "require": ["susy"],
+                        "cache_path": "tmp/cache/compass",
+                        "relative_assets": true,
+                        "fonts_path": "media/fonts"
+                    }
+                }
+            }
+        }
+    },
+    "compression":{
+        "enabled": false
+    }
+    
+}
