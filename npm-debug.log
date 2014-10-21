@@ -1,0 +1,1016 @@
+0 info it worked if it ends with ok
+1 verbose cli [ 'C:\\Program Files\\nodejs\\\\node.exe',
+1 verbose cli   'C:\\Program Files\\nodejs\\node_modules\\npm\\bin\\npm-cli.js',
+1 verbose cli   'install' ]
+2 info using npm@1.4.21
+3 info using node@v0.10.30
+4 verbose node symlink C:\Program Files\nodejs\\node.exe
+5 warn package.json eurekaa.web@0.1.0 No README data
+6 verbose readDependencies using package.json deps
+7 verbose install where, deps [ 'D:\\eurekaa\\progetti\\eurekaa.web', [ 'continuum.js' ] ]
+8 info preinstall eurekaa.web@0.1.0
+9 verbose readDependencies using package.json deps
+10 verbose cache add [ 'continuum.js@*', null ]
+11 verbose cache add name=undefined spec="continuum.js@*" args=["continuum.js@*",null]
+12 verbose parsed url { protocol: null,
+12 verbose parsed url   slashes: null,
+12 verbose parsed url   auth: null,
+12 verbose parsed url   host: null,
+12 verbose parsed url   port: null,
+12 verbose parsed url   hostname: null,
+12 verbose parsed url   hash: null,
+12 verbose parsed url   search: null,
+12 verbose parsed url   query: null,
+12 verbose parsed url   pathname: 'continuum.js@*',
+12 verbose parsed url   path: 'continuum.js@*',
+12 verbose parsed url   href: 'continuum.js@*' }
+13 verbose cache add name="continuum.js" spec="*" args=["continuum.js","*"]
+14 verbose parsed url { protocol: null,
+14 verbose parsed url   slashes: null,
+14 verbose parsed url   auth: null,
+14 verbose parsed url   host: null,
+14 verbose parsed url   port: null,
+14 verbose parsed url   hostname: null,
+14 verbose parsed url   hash: null,
+14 verbose parsed url   search: null,
+14 verbose parsed url   query: null,
+14 verbose parsed url   pathname: '*',
+14 verbose parsed url   path: '*',
+14 verbose parsed url   href: '*' }
+15 verbose addNamed [ 'continuum.js', '*' ]
+16 verbose addNamed [ null, '*' ]
+17 silly lockFile b4b894a3-continuum-js continuum.js@*
+18 verbose lock continuum.js@* C:\Users\Stefano\AppData\Roaming\npm-cache\b4b894a3-continuum-js.lock
+19 silly addNameRange { name: 'continuum.js', range: '*', hasData: false }
+20 verbose request where is /continuum.js
+21 verbose request registry https://registry.npmjs.org/
+22 verbose request id 7fba2682f5bd8407
+23 verbose url raw /continuum.js
+24 verbose url resolving [ 'https://registry.npmjs.org/', './continuum.js' ]
+25 verbose url resolved https://registry.npmjs.org/continuum.js
+26 verbose request where is https://registry.npmjs.org/continuum.js
+27 info trying registry request attempt 1 at 13:25:33
+28 verbose etag "EU7QXX6B97M8KY6WWF8I7OZSZ"
+29 http GET https://registry.npmjs.org/continuum.js
+30 http 200 https://registry.npmjs.org/continuum.js
+31 silly registry.get cb [ 200,
+31 silly registry.get   { date: 'Tue, 21 Oct 2014 11:25:36 GMT',
+31 silly registry.get     server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+31 silly registry.get     etag: '"49GAWZPEA4RUQFOCNDQ59HBTJ"',
+31 silly registry.get     'content-type': 'application/json',
+31 silly registry.get     'cache-control': 'max-age=60',
+31 silly registry.get     'content-length': '7790',
+31 silly registry.get     'accept-ranges': 'bytes',
+31 silly registry.get     via: '1.1 varnish',
+31 silly registry.get     age: '0',
+31 silly registry.get     'x-served-by': 'cache-ams4125-AMS',
+31 silly registry.get     'x-cache': 'MISS',
+31 silly registry.get     'x-cache-hits': '0',
+31 silly registry.get     'x-timer': 'S1413890736.322210,VS0,VE160',
+31 silly registry.get     vary: 'Accept',
+31 silly registry.get     'keep-alive': 'timeout=10, max=50',
+31 silly registry.get     connection: 'Keep-Alive' } ]
+32 silly addNameRange number 2 { name: 'continuum.js', range: '*', hasData: true }
+33 silly addNameRange versions [ 'continuum.js',
+33 silly addNameRange   [ '1.0.1', '0.0.2', '0.1.4', '0.1.6', '0.1.7' ] ]
+34 verbose addNamed [ 'continuum.js', '0.1.7' ]
+35 verbose addNamed [ '0.1.7', '0.1.7' ]
+36 silly lockFile d4beca3a-continuum-js-0-1-7 continuum.js@0.1.7
+37 verbose lock continuum.js@0.1.7 C:\Users\Stefano\AppData\Roaming\npm-cache\d4beca3a-continuum-js-0-1-7.lock
+38 silly lockFile d4beca3a-continuum-js-0-1-7 continuum.js@0.1.7
+39 silly lockFile d4beca3a-continuum-js-0-1-7 continuum.js@0.1.7
+40 silly lockFile b4b894a3-continuum-js continuum.js@*
+41 silly lockFile b4b894a3-continuum-js continuum.js@*
+42 silly resolved [ { name: 'continuum.js',
+42 silly resolved     version: '0.1.7',
+42 silly resolved     description: 'Continuum.js is a compiler for asynchronous JavaScript Continuum-Passing-Style transformation.',
+42 silly resolved     author: { name: 'Stefano Graziato' },
+42 silly resolved     license: 'BSD',
+42 silly resolved     main: 'continuum.js',
+42 silly resolved     bin: { continuum: './bin/continuum' },
+42 silly resolved     directories: { lib: 'lib', bin: 'bin', test: 'test' },
+42 silly resolved     scripts: { test: 'mocha -R spec' },
+42 silly resolved     repository:
+42 silly resolved      { type: 'git',
+42 silly resolved        url: 'git://github.com/eurekaa/continuum.js.git' },
+42 silly resolved     preferGlobal: true,
+42 silly resolved     bugs: { url: 'https://github.com/eurekaa/continuum.js/issues' },
+42 silly resolved     keywords:
+42 silly resolved      [ 'compiler',
+42 silly resolved        'continuum',
+42 silly resolved        'async',
+42 silly resolved        'cps',
+42 silly resolved        'monad',
+42 silly resolved        'coffeescript',
+42 silly resolved        'livescript' ],
+42 silly resolved     dependencies:
+42 silly resolved      { esprima: '1.0.3',
+42 silly resolved        escodegen: '0.0.22',
+42 silly resolved        commander: '1.1.1',
+42 silly resolved        mkdirp: '0.3.5',
+42 silly resolved        'fs-tools': '0.2.10',
+42 silly resolved        'fs-walk': '0.0.1',
+42 silly resolved        'coffee-script': '1.6.3',
+42 silly resolved        LiveScript: '1.2.0',
+42 silly resolved        string: '1.5.0',
+42 silly resolved        jsdoc: 'git://github.com/jsdoc3/jsdoc.git',
+42 silly resolved        jade: '0.34.1',
+42 silly resolved        less: '1.4.1' },
+42 silly resolved     devDependencies: { mocha: '1.7.4' },
+42 silly resolved     readmeFilename: 'README.md',
+42 silly resolved     _id: 'continuum.js@0.1.7',
+42 silly resolved     _from: 'continuum.js@*',
+42 silly resolved     readme: '# Continuum.js\r\n\r\ncontinuum.js is a fork of [Continuation.js](https://github.com/BYVoid/continuation).\r\nIt is a compiler for [Continuation-Passing Style](http://en.wikipedia.org/wiki/Continuation-passing_style) transformation\r\nwhich lets you write asynchronous code in a synchronous way.\r\n\r\nthis:\r\n```javascript\r\n    // coffee-scripted\r\n\r\n    sum 1, 1, _(tot)\r\n    console.log tot\r\n\r\n    sum tot, 1, _(tot)\r\n    console.log tot\r\n```\r\n\r\ninstead of this:\r\n```javascript\r\n    // javascript compiled\r\n\r\n    sum(a, b, function(tot){\r\n        console.log(tot);\r\n\r\n        sum(tot, 1, function(tot){\r\n            console.log(tot);\r\n        });\r\n    });\r\n```\r\n\r\n\r\nI\'m going to adapt this compiler to my needs.\r\n\r\n\r\n1. added shortcuts for coffee-script developers:\r\n\r\n    cont(err, value) or __(err, value) for coffee-scripters.\r\n\r\n    obtain(value) or _(value) for coffee-scripters.\r\n\r\n    parallel keyword remains the same for the moment.\r\n\r\n\r\n2. fixed problems with ignored parameters.\r\n\r\n\r\n3. I\'ll try to change some syntax too.',
+42 silly resolved     homepage: 'https://github.com/eurekaa/continuum.js' } ]
+43 info install continuum.js@0.1.7 into D:\eurekaa\progetti\eurekaa.web
+44 info installOne continuum.js@0.1.7
+45 verbose node_modules\continuum.js unbuild
+46 verbose tar unpack C:\Users\Stefano\AppData\Roaming\npm-cache\continuum.js\0.1.7\package.tgz
+47 silly lockFile 9d114a4d-aa-web-node-modules-continuum-js tar://D:\eurekaa\progetti\eurekaa.web\node_modules\continuum.js
+48 verbose lock tar://D:\eurekaa\progetti\eurekaa.web\node_modules\continuum.js C:\Users\Stefano\AppData\Roaming\npm-cache\9d114a4d-aa-web-node-modules-continuum-js.lock
+49 silly lockFile 5e378825-e-continuum-js-0-1-7-package-tgz tar://C:\Users\Stefano\AppData\Roaming\npm-cache\continuum.js\0.1.7\package.tgz
+50 verbose lock tar://C:\Users\Stefano\AppData\Roaming\npm-cache\continuum.js\0.1.7\package.tgz C:\Users\Stefano\AppData\Roaming\npm-cache\5e378825-e-continuum-js-0-1-7-package-tgz.lock
+51 silly gunzTarPerm modes [ '777', '666' ]
+52 silly gunzTarPerm extractEntry package.json
+53 silly gunzTarPerm extractEntry .npmignore
+54 silly gunzTarPerm extractEntry README.md
+55 silly gunzTarPerm extractEntry continuum.js
+56 silly gunzTarPerm extractEntry examples/clock/clock.c.js
+57 silly gunzTarPerm extractEntry examples/clock/clock.js
+58 silly gunzTarPerm extractEntry examples/clock/clock.html
+59 silly gunzTarPerm extractEntry examples/diskusage/diskusage.js
+60 silly gunzTarPerm extractEntry examples/jit/jit.js
+61 silly gunzTarPerm extractEntry examples/parallel/parallel.js
+62 silly gunzTarPerm extractEntry examples/sorting/sorting.c.js
+63 silly gunzTarPerm extractEntry examples/sorting/sorting.js
+64 silly gunzTarPerm extractEntry examples/sorting/sorting.html
+65 silly gunzTarPerm extractEntry bin/continuum
+66 silly gunzTarPerm extractEntry License
+67 silly gunzTarPerm extractEntry CHANGELOG.md
+68 silly gunzTarPerm extractEntry test/test.js
+69 silly gunzTarPerm extractEntry test/cases/continue.js
+70 silly gunzTarPerm extractEntry test/cases/list.js
+71 silly gunzTarPerm extractEntry test/cases/loop.js
+72 silly gunzTarPerm extractEntry test/cases/multiple_parallel.js
+73 silly gunzTarPerm extractEntry test/cases/nested_block.js
+74 silly gunzTarPerm extractEntry test/cases/ifvar.js
+75 silly gunzTarPerm extractEntry test/cases/parallel_exception.js
+76 silly gunzTarPerm extractEntry test/cases/pi.js
+77 silly gunzTarPerm extractEntry test/cases/readfile.js
+78 silly gunzTarPerm extractEntry test/cases/switch.js
+79 silly gunzTarPerm extractEntry test/cases/switchbreak.js
+80 silly gunzTarPerm extractEntry test/cases/if.js
+81 silly gunzTarPerm extractEntry test/cases/try_body.js
+82 silly gunzTarPerm extractEntry test/cases/forin.js
+83 silly gunzTarPerm extractEntry test/cases/try_both.js
+84 silly gunzTarPerm extractEntry test/cases/for.js
+85 silly gunzTarPerm extractEntry test/cases/try_catch.js
+86 silly gunzTarPerm extractEntry test/cases/fib.js
+87 silly gunzTarPerm extractEntry test/cases/try_if.js
+88 silly gunzTarPerm extractEntry test/cases/factor.js
+89 silly gunzTarPerm extractEntry test/cases/try_nested_function.js
+90 silly gunzTarPerm extractEntry test/cases/diskusage.js
+91 silly gunzTarPerm extractEntry test/cases/try_sync.js
+92 silly gunzTarPerm extractEntry test/cases/defer.js
+93 silly gunzTarPerm extractEntry test/cases/whilebreak.js
+94 silly gunzTarPerm extractEntry test/cases/parallel.js
+95 silly gunzTarPerm extractEntry test/results/continue.js
+96 silly gunzTarPerm extractEntry test/results/list.js
+97 silly gunzTarPerm extractEntry test/results/loop.js
+98 silly gunzTarPerm extractEntry test/results/multiple_parallel.js
+99 silly gunzTarPerm extractEntry test/results/nested_block.js
+100 silly gunzTarPerm extractEntry test/results/ifvar.js
+101 silly gunzTarPerm extractEntry test/results/parallel_exception.js
+102 silly gunzTarPerm extractEntry test/results/pi.js
+103 silly gunzTarPerm extractEntry test/results/readfile.js
+104 silly gunzTarPerm extractEntry test/results/switch.js
+105 silly gunzTarPerm extractEntry test/results/switchbreak.js
+106 silly gunzTarPerm extractEntry test/results/if.js
+107 silly gunzTarPerm extractEntry test/results/try_body.js
+108 silly gunzTarPerm extractEntry test/results/forin.js
+109 silly gunzTarPerm extractEntry test/results/try_both.js
+110 silly gunzTarPerm extractEntry test/results/for.js
+111 silly gunzTarPerm extractEntry test/results/try_catch.js
+112 silly gunzTarPerm extractEntry test/results/fib.js
+113 silly gunzTarPerm extractEntry test/results/try_if.js
+114 silly gunzTarPerm extractEntry test/results/factor.js
+115 silly gunzTarPerm extractEntry test/results/try_nested_function.js
+116 silly gunzTarPerm extractEntry test/results/diskusage.js
+117 silly gunzTarPerm extractEntry test/results/try_sync.js
+118 silly gunzTarPerm extractEntry test/results/defer.js
+119 silly gunzTarPerm extractEntry test/results/whilebreak.js
+120 silly gunzTarPerm extractEntry test/results/parallel.js
+121 silly gunzTarPerm extractEntry scripts/ast.js
+122 silly gunzTarPerm extractEntry scripts/update_tests.js
+123 silly gunzTarPerm extractEntry lib/cli.js
+124 silly gunzTarPerm extractEntry lib/helpers.js
+125 silly gunzTarPerm extractEntry lib/parser.js
+126 silly gunzTarPerm extractEntry lib/traverse.js
+127 silly gunzTarPerm extractEntry lib/syntax/ArrayExpression.js
+128 silly gunzTarPerm extractEntry lib/syntax/Identifier.js
+129 silly gunzTarPerm extractEntry lib/syntax/IfStatement.js
+130 silly gunzTarPerm extractEntry lib/syntax/index.js
+131 silly gunzTarPerm extractEntry lib/syntax/FunctionExpression.js
+132 silly gunzTarPerm extractEntry lib/syntax/LogicalExpression.js
+133 silly gunzTarPerm extractEntry lib/syntax/MemberExpression.js
+134 silly gunzTarPerm extractEntry lib/syntax/NewExpression.js
+135 silly gunzTarPerm extractEntry lib/syntax/ObjectExpression.js
+136 silly gunzTarPerm extractEntry lib/syntax/Program.js
+137 silly gunzTarPerm extractEntry lib/syntax/FunctionDeclaration.js
+138 silly gunzTarPerm extractEntry lib/syntax/Property.js
+139 silly gunzTarPerm extractEntry lib/syntax/ForStatement.js
+140 silly gunzTarPerm extractEntry lib/syntax/ReturnStatement.js
+141 silly gunzTarPerm extractEntry lib/syntax/ForInStatement.js
+142 silly gunzTarPerm extractEntry lib/syntax/SequenceExpression.js
+143 silly gunzTarPerm extractEntry lib/syntax/ExpressionStatement.js
+144 silly gunzTarPerm extractEntry lib/syntax/SwitchCase.js
+145 silly gunzTarPerm extractEntry lib/syntax/EmptyStatement.js
+146 silly gunzTarPerm extractEntry lib/syntax/SwitchStatement.js
+147 silly gunzTarPerm extractEntry lib/syntax/ContinueStatement.js
+148 silly gunzTarPerm extractEntry lib/syntax/ThisExpression.js
+149 silly gunzTarPerm extractEntry lib/syntax/ConditionalExpression.js
+150 silly gunzTarPerm extractEntry lib/syntax/ThrowStatement.js
+151 silly gunzTarPerm extractEntry lib/syntax/CatchClause.js
+152 silly gunzTarPerm extractEntry lib/syntax/TryStatement.js
+153 silly gunzTarPerm extractEntry lib/syntax/CallExpression.js
+154 silly gunzTarPerm extractEntry lib/syntax/UnaryExpression.js
+155 silly gunzTarPerm extractEntry lib/syntax/BreakStatement.js
+156 silly gunzTarPerm extractEntry lib/syntax/UpdateExpression.js
+157 silly gunzTarPerm extractEntry lib/syntax/BlockStatement.js
+158 silly gunzTarPerm extractEntry lib/syntax/VariableDeclaration.js
+159 silly gunzTarPerm extractEntry lib/syntax/BinaryExpression.js
+160 silly gunzTarPerm extractEntry lib/syntax/VariableDeclarator.js
+161 silly gunzTarPerm extractEntry lib/syntax/AssignmentExpression.js
+162 silly gunzTarPerm extractEntry lib/syntax/WhileStatement.js
+163 silly gunzTarPerm extractEntry lib/syntax/Literal.js
+164 silly lockFile 9d114a4d-aa-web-node-modules-continuum-js tar://D:\eurekaa\progetti\eurekaa.web\node_modules\continuum.js
+165 silly lockFile 9d114a4d-aa-web-node-modules-continuum-js tar://D:\eurekaa\progetti\eurekaa.web\node_modules\continuum.js
+166 silly lockFile 5e378825-e-continuum-js-0-1-7-package-tgz tar://C:\Users\Stefano\AppData\Roaming\npm-cache\continuum.js\0.1.7\package.tgz
+167 silly lockFile 5e378825-e-continuum-js-0-1-7-package-tgz tar://C:\Users\Stefano\AppData\Roaming\npm-cache\continuum.js\0.1.7\package.tgz
+168 info preinstall continuum.js@0.1.7
+169 verbose readDependencies using package.json deps
+170 verbose readDependencies using package.json deps
+171 verbose cache add [ 'esprima@1.0.3', null ]
+172 verbose cache add name=undefined spec="esprima@1.0.3" args=["esprima@1.0.3",null]
+173 verbose parsed url { protocol: null,
+173 verbose parsed url   slashes: null,
+173 verbose parsed url   auth: null,
+173 verbose parsed url   host: null,
+173 verbose parsed url   port: null,
+173 verbose parsed url   hostname: null,
+173 verbose parsed url   hash: null,
+173 verbose parsed url   search: null,
+173 verbose parsed url   query: null,
+173 verbose parsed url   pathname: 'esprima@1.0.3',
+173 verbose parsed url   path: 'esprima@1.0.3',
+173 verbose parsed url   href: 'esprima@1.0.3' }
+174 verbose cache add [ 'escodegen@0.0.22', null ]
+175 verbose cache add name=undefined spec="escodegen@0.0.22" args=["escodegen@0.0.22",null]
+176 verbose parsed url { protocol: null,
+176 verbose parsed url   slashes: null,
+176 verbose parsed url   auth: null,
+176 verbose parsed url   host: null,
+176 verbose parsed url   port: null,
+176 verbose parsed url   hostname: null,
+176 verbose parsed url   hash: null,
+176 verbose parsed url   search: null,
+176 verbose parsed url   query: null,
+176 verbose parsed url   pathname: 'escodegen@0.0.22',
+176 verbose parsed url   path: 'escodegen@0.0.22',
+176 verbose parsed url   href: 'escodegen@0.0.22' }
+177 verbose cache add [ 'commander@1.1.1', null ]
+178 verbose cache add name=undefined spec="commander@1.1.1" args=["commander@1.1.1",null]
+179 verbose parsed url { protocol: null,
+179 verbose parsed url   slashes: null,
+179 verbose parsed url   auth: null,
+179 verbose parsed url   host: null,
+179 verbose parsed url   port: null,
+179 verbose parsed url   hostname: null,
+179 verbose parsed url   hash: null,
+179 verbose parsed url   search: null,
+179 verbose parsed url   query: null,
+179 verbose parsed url   pathname: 'commander@1.1.1',
+179 verbose parsed url   path: 'commander@1.1.1',
+179 verbose parsed url   href: 'commander@1.1.1' }
+180 verbose cache add [ 'mkdirp@0.3.5', null ]
+181 verbose cache add name=undefined spec="mkdirp@0.3.5" args=["mkdirp@0.3.5",null]
+182 verbose parsed url { protocol: null,
+182 verbose parsed url   slashes: null,
+182 verbose parsed url   auth: null,
+182 verbose parsed url   host: null,
+182 verbose parsed url   port: null,
+182 verbose parsed url   hostname: null,
+182 verbose parsed url   hash: null,
+182 verbose parsed url   search: null,
+182 verbose parsed url   query: null,
+182 verbose parsed url   pathname: 'mkdirp@0.3.5',
+182 verbose parsed url   path: 'mkdirp@0.3.5',
+182 verbose parsed url   href: 'mkdirp@0.3.5' }
+183 verbose cache add [ 'fs-tools@0.2.10', null ]
+184 verbose cache add name=undefined spec="fs-tools@0.2.10" args=["fs-tools@0.2.10",null]
+185 verbose parsed url { protocol: null,
+185 verbose parsed url   slashes: null,
+185 verbose parsed url   auth: null,
+185 verbose parsed url   host: null,
+185 verbose parsed url   port: null,
+185 verbose parsed url   hostname: null,
+185 verbose parsed url   hash: null,
+185 verbose parsed url   search: null,
+185 verbose parsed url   query: null,
+185 verbose parsed url   pathname: 'fs-tools@0.2.10',
+185 verbose parsed url   path: 'fs-tools@0.2.10',
+185 verbose parsed url   href: 'fs-tools@0.2.10' }
+186 verbose cache add name="esprima" spec="1.0.3" args=["esprima","1.0.3"]
+187 verbose parsed url { protocol: null,
+187 verbose parsed url   slashes: null,
+187 verbose parsed url   auth: null,
+187 verbose parsed url   host: null,
+187 verbose parsed url   port: null,
+187 verbose parsed url   hostname: null,
+187 verbose parsed url   hash: null,
+187 verbose parsed url   search: null,
+187 verbose parsed url   query: null,
+187 verbose parsed url   pathname: '1.0.3',
+187 verbose parsed url   path: '1.0.3',
+187 verbose parsed url   href: '1.0.3' }
+188 verbose addNamed [ 'esprima', '1.0.3' ]
+189 verbose addNamed [ '1.0.3', '1.0.3' ]
+190 silly lockFile 71dc3a4c-esprima-1-0-3 esprima@1.0.3
+191 verbose lock esprima@1.0.3 C:\Users\Stefano\AppData\Roaming\npm-cache\71dc3a4c-esprima-1-0-3.lock
+192 verbose cache add name="escodegen" spec="0.0.22" args=["escodegen","0.0.22"]
+193 verbose parsed url { protocol: null,
+193 verbose parsed url   slashes: null,
+193 verbose parsed url   auth: null,
+193 verbose parsed url   host: null,
+193 verbose parsed url   port: null,
+193 verbose parsed url   hostname: null,
+193 verbose parsed url   hash: null,
+193 verbose parsed url   search: null,
+193 verbose parsed url   query: null,
+193 verbose parsed url   pathname: '0.0.22',
+193 verbose parsed url   path: '0.0.22',
+193 verbose parsed url   href: '0.0.22' }
+194 verbose addNamed [ 'escodegen', '0.0.22' ]
+195 verbose addNamed [ '0.0.22', '0.0.22' ]
+196 silly lockFile aaffc05a-escodegen-0-0-22 escodegen@0.0.22
+197 verbose lock escodegen@0.0.22 C:\Users\Stefano\AppData\Roaming\npm-cache\aaffc05a-escodegen-0-0-22.lock
+198 verbose cache add name="commander" spec="1.1.1" args=["commander","1.1.1"]
+199 verbose parsed url { protocol: null,
+199 verbose parsed url   slashes: null,
+199 verbose parsed url   auth: null,
+199 verbose parsed url   host: null,
+199 verbose parsed url   port: null,
+199 verbose parsed url   hostname: null,
+199 verbose parsed url   hash: null,
+199 verbose parsed url   search: null,
+199 verbose parsed url   query: null,
+199 verbose parsed url   pathname: '1.1.1',
+199 verbose parsed url   path: '1.1.1',
+199 verbose parsed url   href: '1.1.1' }
+200 verbose addNamed [ 'commander', '1.1.1' ]
+201 verbose addNamed [ '1.1.1', '1.1.1' ]
+202 silly lockFile e890879a-commander-1-1-1 commander@1.1.1
+203 verbose lock commander@1.1.1 C:\Users\Stefano\AppData\Roaming\npm-cache\e890879a-commander-1-1-1.lock
+204 verbose cache add name="mkdirp" spec="0.3.5" args=["mkdirp","0.3.5"]
+205 verbose parsed url { protocol: null,
+205 verbose parsed url   slashes: null,
+205 verbose parsed url   auth: null,
+205 verbose parsed url   host: null,
+205 verbose parsed url   port: null,
+205 verbose parsed url   hostname: null,
+205 verbose parsed url   hash: null,
+205 verbose parsed url   search: null,
+205 verbose parsed url   query: null,
+205 verbose parsed url   pathname: '0.3.5',
+205 verbose parsed url   path: '0.3.5',
+205 verbose parsed url   href: '0.3.5' }
+206 verbose addNamed [ 'mkdirp', '0.3.5' ]
+207 verbose addNamed [ '0.3.5', '0.3.5' ]
+208 silly lockFile 67d2df2a-mkdirp-0-3-5 mkdirp@0.3.5
+209 verbose lock mkdirp@0.3.5 C:\Users\Stefano\AppData\Roaming\npm-cache\67d2df2a-mkdirp-0-3-5.lock
+210 verbose cache add [ 'fs-walk@0.0.1', null ]
+211 verbose cache add name=undefined spec="fs-walk@0.0.1" args=["fs-walk@0.0.1",null]
+212 verbose parsed url { protocol: null,
+212 verbose parsed url   slashes: null,
+212 verbose parsed url   auth: null,
+212 verbose parsed url   host: null,
+212 verbose parsed url   port: null,
+212 verbose parsed url   hostname: null,
+212 verbose parsed url   hash: null,
+212 verbose parsed url   search: null,
+212 verbose parsed url   query: null,
+212 verbose parsed url   pathname: 'fs-walk@0.0.1',
+212 verbose parsed url   path: 'fs-walk@0.0.1',
+212 verbose parsed url   href: 'fs-walk@0.0.1' }
+213 verbose cache add [ 'coffee-script@1.6.3', null ]
+214 verbose cache add name=undefined spec="coffee-script@1.6.3" args=["coffee-script@1.6.3",null]
+215 verbose parsed url { protocol: null,
+215 verbose parsed url   slashes: null,
+215 verbose parsed url   auth: null,
+215 verbose parsed url   host: null,
+215 verbose parsed url   port: null,
+215 verbose parsed url   hostname: null,
+215 verbose parsed url   hash: null,
+215 verbose parsed url   search: null,
+215 verbose parsed url   query: null,
+215 verbose parsed url   pathname: 'coffee-script@1.6.3',
+215 verbose parsed url   path: 'coffee-script@1.6.3',
+215 verbose parsed url   href: 'coffee-script@1.6.3' }
+216 verbose cache add [ 'LiveScript@1.2.0', null ]
+217 verbose cache add name=undefined spec="LiveScript@1.2.0" args=["LiveScript@1.2.0",null]
+218 verbose parsed url { protocol: null,
+218 verbose parsed url   slashes: null,
+218 verbose parsed url   auth: null,
+218 verbose parsed url   host: null,
+218 verbose parsed url   port: null,
+218 verbose parsed url   hostname: null,
+218 verbose parsed url   hash: null,
+218 verbose parsed url   search: null,
+218 verbose parsed url   query: null,
+218 verbose parsed url   pathname: 'LiveScript@1.2.0',
+218 verbose parsed url   path: 'LiveScript@1.2.0',
+218 verbose parsed url   href: 'LiveScript@1.2.0' }
+219 verbose cache add [ 'string@1.5.0', null ]
+220 verbose cache add name=undefined spec="string@1.5.0" args=["string@1.5.0",null]
+221 verbose parsed url { protocol: null,
+221 verbose parsed url   slashes: null,
+221 verbose parsed url   auth: null,
+221 verbose parsed url   host: null,
+221 verbose parsed url   port: null,
+221 verbose parsed url   hostname: null,
+221 verbose parsed url   hash: null,
+221 verbose parsed url   search: null,
+221 verbose parsed url   query: null,
+221 verbose parsed url   pathname: 'string@1.5.0',
+221 verbose parsed url   path: 'string@1.5.0',
+221 verbose parsed url   href: 'string@1.5.0' }
+222 verbose cache add [ 'jsdoc@git://github.com/jsdoc3/jsdoc.git', null ]
+223 verbose cache add name=undefined spec="jsdoc@git://github.com/jsdoc3/jsdoc.git" args=["jsdoc@git://github.com/jsdoc3/jsdoc.git",null]
+224 verbose parsed url { protocol: null,
+224 verbose parsed url   slashes: null,
+224 verbose parsed url   auth: null,
+224 verbose parsed url   host: null,
+224 verbose parsed url   port: null,
+224 verbose parsed url   hostname: null,
+224 verbose parsed url   hash: null,
+224 verbose parsed url   search: null,
+224 verbose parsed url   query: null,
+224 verbose parsed url   pathname: 'jsdoc@git://github.com/jsdoc3/jsdoc.git',
+224 verbose parsed url   path: 'jsdoc@git://github.com/jsdoc3/jsdoc.git',
+224 verbose parsed url   href: 'jsdoc@git://github.com/jsdoc3/jsdoc.git' }
+225 verbose cache add [ 'jade@0.34.1', null ]
+226 verbose cache add name=undefined spec="jade@0.34.1" args=["jade@0.34.1",null]
+227 verbose parsed url { protocol: null,
+227 verbose parsed url   slashes: null,
+227 verbose parsed url   auth: null,
+227 verbose parsed url   host: null,
+227 verbose parsed url   port: null,
+227 verbose parsed url   hostname: null,
+227 verbose parsed url   hash: null,
+227 verbose parsed url   search: null,
+227 verbose parsed url   query: null,
+227 verbose parsed url   pathname: 'jade@0.34.1',
+227 verbose parsed url   path: 'jade@0.34.1',
+227 verbose parsed url   href: 'jade@0.34.1' }
+228 verbose cache add [ 'less@1.4.1', null ]
+229 verbose cache add name=undefined spec="less@1.4.1" args=["less@1.4.1",null]
+230 verbose parsed url { protocol: null,
+230 verbose parsed url   slashes: null,
+230 verbose parsed url   auth: null,
+230 verbose parsed url   host: null,
+230 verbose parsed url   port: null,
+230 verbose parsed url   hostname: null,
+230 verbose parsed url   hash: null,
+230 verbose parsed url   search: null,
+230 verbose parsed url   query: null,
+230 verbose parsed url   pathname: 'less@1.4.1',
+230 verbose parsed url   path: 'less@1.4.1',
+230 verbose parsed url   href: 'less@1.4.1' }
+231 verbose cache add name="fs-tools" spec="0.2.10" args=["fs-tools","0.2.10"]
+232 verbose parsed url { protocol: null,
+232 verbose parsed url   slashes: null,
+232 verbose parsed url   auth: null,
+232 verbose parsed url   host: null,
+232 verbose parsed url   port: null,
+232 verbose parsed url   hostname: null,
+232 verbose parsed url   hash: null,
+232 verbose parsed url   search: null,
+232 verbose parsed url   query: null,
+232 verbose parsed url   pathname: '0.2.10',
+232 verbose parsed url   path: '0.2.10',
+232 verbose parsed url   href: '0.2.10' }
+233 verbose addNamed [ 'fs-tools', '0.2.10' ]
+234 verbose addNamed [ '0.2.10', '0.2.10' ]
+235 silly lockFile cfa38223-fs-tools-0-2-10 fs-tools@0.2.10
+236 verbose lock fs-tools@0.2.10 C:\Users\Stefano\AppData\Roaming\npm-cache\cfa38223-fs-tools-0-2-10.lock
+237 verbose cache add name="fs-walk" spec="0.0.1" args=["fs-walk","0.0.1"]
+238 verbose parsed url { protocol: null,
+238 verbose parsed url   slashes: null,
+238 verbose parsed url   auth: null,
+238 verbose parsed url   host: null,
+238 verbose parsed url   port: null,
+238 verbose parsed url   hostname: null,
+238 verbose parsed url   hash: null,
+238 verbose parsed url   search: null,
+238 verbose parsed url   query: null,
+238 verbose parsed url   pathname: '0.0.1',
+238 verbose parsed url   path: '0.0.1',
+238 verbose parsed url   href: '0.0.1' }
+239 verbose addNamed [ 'fs-walk', '0.0.1' ]
+240 verbose addNamed [ '0.0.1', '0.0.1' ]
+241 silly lockFile e9305758-fs-walk-0-0-1 fs-walk@0.0.1
+242 verbose lock fs-walk@0.0.1 C:\Users\Stefano\AppData\Roaming\npm-cache\e9305758-fs-walk-0-0-1.lock
+243 verbose cache add name="coffee-script" spec="1.6.3" args=["coffee-script","1.6.3"]
+244 verbose parsed url { protocol: null,
+244 verbose parsed url   slashes: null,
+244 verbose parsed url   auth: null,
+244 verbose parsed url   host: null,
+244 verbose parsed url   port: null,
+244 verbose parsed url   hostname: null,
+244 verbose parsed url   hash: null,
+244 verbose parsed url   search: null,
+244 verbose parsed url   query: null,
+244 verbose parsed url   pathname: '1.6.3',
+244 verbose parsed url   path: '1.6.3',
+244 verbose parsed url   href: '1.6.3' }
+245 verbose addNamed [ 'coffee-script', '1.6.3' ]
+246 verbose addNamed [ '1.6.3', '1.6.3' ]
+247 silly lockFile 15ab88ca-coffee-script-1-6-3 coffee-script@1.6.3
+248 verbose lock coffee-script@1.6.3 C:\Users\Stefano\AppData\Roaming\npm-cache\15ab88ca-coffee-script-1-6-3.lock
+249 verbose cache add name="LiveScript" spec="1.2.0" args=["LiveScript","1.2.0"]
+250 verbose parsed url { protocol: null,
+250 verbose parsed url   slashes: null,
+250 verbose parsed url   auth: null,
+250 verbose parsed url   host: null,
+250 verbose parsed url   port: null,
+250 verbose parsed url   hostname: null,
+250 verbose parsed url   hash: null,
+250 verbose parsed url   search: null,
+250 verbose parsed url   query: null,
+250 verbose parsed url   pathname: '1.2.0',
+250 verbose parsed url   path: '1.2.0',
+250 verbose parsed url   href: '1.2.0' }
+251 verbose addNamed [ 'LiveScript', '1.2.0' ]
+252 verbose addNamed [ '1.2.0', '1.2.0' ]
+253 silly lockFile 457c4be1-LiveScript-1-2-0 LiveScript@1.2.0
+254 verbose lock LiveScript@1.2.0 C:\Users\Stefano\AppData\Roaming\npm-cache\457c4be1-LiveScript-1-2-0.lock
+255 verbose cache add name="string" spec="1.5.0" args=["string","1.5.0"]
+256 verbose parsed url { protocol: null,
+256 verbose parsed url   slashes: null,
+256 verbose parsed url   auth: null,
+256 verbose parsed url   host: null,
+256 verbose parsed url   port: null,
+256 verbose parsed url   hostname: null,
+256 verbose parsed url   hash: null,
+256 verbose parsed url   search: null,
+256 verbose parsed url   query: null,
+256 verbose parsed url   pathname: '1.5.0',
+256 verbose parsed url   path: '1.5.0',
+256 verbose parsed url   href: '1.5.0' }
+257 verbose addNamed [ 'string', '1.5.0' ]
+258 verbose addNamed [ '1.5.0', '1.5.0' ]
+259 silly lockFile 93183b8e-string-1-5-0 string@1.5.0
+260 verbose lock string@1.5.0 C:\Users\Stefano\AppData\Roaming\npm-cache\93183b8e-string-1-5-0.lock
+261 verbose cache add name="jsdoc" spec="git://github.com/jsdoc3/jsdoc.git" args=["jsdoc","git://github.com/jsdoc3/jsdoc.git"]
+262 verbose parsed url { protocol: 'git:',
+262 verbose parsed url   slashes: true,
+262 verbose parsed url   auth: null,
+262 verbose parsed url   host: 'github.com',
+262 verbose parsed url   port: null,
+262 verbose parsed url   hostname: 'github.com',
+262 verbose parsed url   hash: null,
+262 verbose parsed url   search: null,
+262 verbose parsed url   query: null,
+262 verbose parsed url   pathname: '/jsdoc3/jsdoc.git',
+262 verbose parsed url   path: '/jsdoc3/jsdoc.git',
+262 verbose parsed url   href: 'git://github.com/jsdoc3/jsdoc.git' }
+263 silly lockFile 0dba5517-git-github-com-jsdoc3-jsdoc-git git://github.com/jsdoc3/jsdoc.git
+264 verbose lock git://github.com/jsdoc3/jsdoc.git C:\Users\Stefano\AppData\Roaming\npm-cache\0dba5517-git-github-com-jsdoc3-jsdoc-git.lock
+265 verbose cache add name="jade" spec="0.34.1" args=["jade","0.34.1"]
+266 verbose parsed url { protocol: null,
+266 verbose parsed url   slashes: null,
+266 verbose parsed url   auth: null,
+266 verbose parsed url   host: null,
+266 verbose parsed url   port: null,
+266 verbose parsed url   hostname: null,
+266 verbose parsed url   hash: null,
+266 verbose parsed url   search: null,
+266 verbose parsed url   query: null,
+266 verbose parsed url   pathname: '0.34.1',
+266 verbose parsed url   path: '0.34.1',
+266 verbose parsed url   href: '0.34.1' }
+267 verbose addNamed [ 'jade', '0.34.1' ]
+268 verbose addNamed [ '0.34.1', '0.34.1' ]
+269 silly lockFile 5e424f25-jade-0-34-1 jade@0.34.1
+270 verbose lock jade@0.34.1 C:\Users\Stefano\AppData\Roaming\npm-cache\5e424f25-jade-0-34-1.lock
+271 verbose cache add name="less" spec="1.4.1" args=["less","1.4.1"]
+272 verbose parsed url { protocol: null,
+272 verbose parsed url   slashes: null,
+272 verbose parsed url   auth: null,
+272 verbose parsed url   host: null,
+272 verbose parsed url   port: null,
+272 verbose parsed url   hostname: null,
+272 verbose parsed url   hash: null,
+272 verbose parsed url   search: null,
+272 verbose parsed url   query: null,
+272 verbose parsed url   pathname: '1.4.1',
+272 verbose parsed url   path: '1.4.1',
+272 verbose parsed url   href: '1.4.1' }
+273 verbose addNamed [ 'less', '1.4.1' ]
+274 verbose addNamed [ '1.4.1', '1.4.1' ]
+275 silly lockFile 9ca2357c-less-1-4-1 less@1.4.1
+276 verbose lock less@1.4.1 C:\Users\Stefano\AppData\Roaming\npm-cache\9ca2357c-less-1-4-1.lock
+277 verbose request where is /fs-walk
+278 verbose request registry https://registry.npmjs.org/
+279 verbose url raw /fs-walk
+280 verbose url resolving [ 'https://registry.npmjs.org/', './fs-walk' ]
+281 verbose url resolved https://registry.npmjs.org/fs-walk
+282 verbose request where is https://registry.npmjs.org/fs-walk
+283 info trying registry request attempt 1 at 13:25:34
+284 http GET https://registry.npmjs.org/fs-walk
+285 verbose addRemoteGit [ 'git://github.com/jsdoc3/jsdoc.git', 'master' ]
+286 verbose request where is /esprima
+287 verbose request registry https://registry.npmjs.org/
+288 verbose url raw /esprima
+289 verbose url resolving [ 'https://registry.npmjs.org/', './esprima' ]
+290 verbose url resolved https://registry.npmjs.org/esprima
+291 verbose request where is https://registry.npmjs.org/esprima
+292 info trying registry request attempt 1 at 13:25:34
+293 verbose etag "14SRY426E3O3A5WDXDUOBH3ZM"
+294 http GET https://registry.npmjs.org/esprima
+295 verbose request where is /coffee-script
+296 verbose request registry https://registry.npmjs.org/
+297 verbose url raw /coffee-script
+298 verbose url resolving [ 'https://registry.npmjs.org/', './coffee-script' ]
+299 verbose url resolved https://registry.npmjs.org/coffee-script
+300 verbose request where is https://registry.npmjs.org/coffee-script
+301 info trying registry request attempt 1 at 13:25:34
+302 verbose etag "BR3MB341TBV418S11THAPFMX3"
+303 http GET https://registry.npmjs.org/coffee-script
+304 verbose request where is /fs-tools
+305 verbose request registry https://registry.npmjs.org/
+306 verbose url raw /fs-tools
+307 verbose url resolving [ 'https://registry.npmjs.org/', './fs-tools' ]
+308 verbose url resolved https://registry.npmjs.org/fs-tools
+309 verbose request where is https://registry.npmjs.org/fs-tools
+310 info trying registry request attempt 1 at 13:25:34
+311 verbose etag "9F0AV54EK2YA753W99Q1KT2JL"
+312 http GET https://registry.npmjs.org/fs-tools
+313 verbose request where is /string
+314 verbose request registry https://registry.npmjs.org/
+315 verbose url raw /string
+316 verbose url resolving [ 'https://registry.npmjs.org/', './string' ]
+317 verbose url resolved https://registry.npmjs.org/string
+318 verbose request where is https://registry.npmjs.org/string
+319 info trying registry request attempt 1 at 13:25:34
+320 verbose etag "424WX0AP9KXZW2XDLD5P3W06Z"
+321 http GET https://registry.npmjs.org/string
+322 verbose request where is /mkdirp
+323 verbose request registry https://registry.npmjs.org/
+324 verbose url raw /mkdirp
+325 verbose url resolving [ 'https://registry.npmjs.org/', './mkdirp' ]
+326 verbose url resolved https://registry.npmjs.org/mkdirp
+327 verbose request where is https://registry.npmjs.org/mkdirp
+328 info trying registry request attempt 1 at 13:25:34
+329 verbose etag "EX7OC1GRA0A9TYJRE9RXASM1I"
+330 http GET https://registry.npmjs.org/mkdirp
+331 verbose request where is /commander
+332 verbose request registry https://registry.npmjs.org/
+333 verbose url raw /commander
+334 verbose url resolving [ 'https://registry.npmjs.org/', './commander' ]
+335 verbose url resolved https://registry.npmjs.org/commander
+336 verbose request where is https://registry.npmjs.org/commander
+337 info trying registry request attempt 1 at 13:25:34
+338 verbose etag "CHPRBN2CLM5P0W3V196GSKY51"
+339 http GET https://registry.npmjs.org/commander
+340 verbose request where is /less
+341 verbose request registry https://registry.npmjs.org/
+342 verbose url raw /less
+343 verbose url resolving [ 'https://registry.npmjs.org/', './less' ]
+344 verbose url resolved https://registry.npmjs.org/less
+345 verbose request where is https://registry.npmjs.org/less
+346 info trying registry request attempt 1 at 13:25:34
+347 verbose etag "DYJGJX1L672O5HX95QLRWDX7X"
+348 http GET https://registry.npmjs.org/less
+349 verbose request where is /escodegen
+350 verbose request registry https://registry.npmjs.org/
+351 verbose url raw /escodegen
+352 verbose url resolving [ 'https://registry.npmjs.org/', './escodegen' ]
+353 verbose url resolved https://registry.npmjs.org/escodegen
+354 verbose request where is https://registry.npmjs.org/escodegen
+355 info trying registry request attempt 1 at 13:25:34
+356 verbose etag "8W9RY3PVAE61NYXTVS0B19SH"
+357 http GET https://registry.npmjs.org/escodegen
+358 verbose request where is /LiveScript
+359 verbose request registry https://registry.npmjs.org/
+360 verbose url raw /LiveScript
+361 verbose url resolving [ 'https://registry.npmjs.org/', './LiveScript' ]
+362 verbose url resolved https://registry.npmjs.org/LiveScript
+363 verbose request where is https://registry.npmjs.org/LiveScript
+364 info trying registry request attempt 1 at 13:25:34
+365 verbose etag "BOVN5M3XFRR9CVZF4X1E7W5TO"
+366 http GET https://registry.npmjs.org/LiveScript
+367 verbose request where is /jade
+368 verbose request registry https://registry.npmjs.org/
+369 verbose url raw /jade
+370 verbose url resolving [ 'https://registry.npmjs.org/', './jade' ]
+371 verbose url resolved https://registry.npmjs.org/jade
+372 verbose request where is https://registry.npmjs.org/jade
+373 info trying registry request attempt 1 at 13:25:34
+374 verbose etag "48D1D0A45Z7YIZRBUXP5E0WY4"
+375 http GET https://registry.npmjs.org/jade
+376 http 304 https://registry.npmjs.org/esprima
+377 silly registry.get cb [ 304,
+377 silly registry.get   { date: 'Tue, 21 Oct 2014 11:25:37 GMT',
+377 silly registry.get     server: 'Apache',
+377 silly registry.get     via: '1.1 varnish',
+377 silly registry.get     'last-modified': 'Tue, 21 Oct 2014 11:25:37 GMT',
+377 silly registry.get     'cache-control': 'max-age=60',
+377 silly registry.get     etag: '"14SRY426E3O3A5WDXDUOBH3ZM"',
+377 silly registry.get     age: '30',
+377 silly registry.get     'x-served-by': 'cache-ams4123-AMS',
+377 silly registry.get     'x-cache': 'HIT',
+377 silly registry.get     'x-cache-hits': '1',
+377 silly registry.get     'x-timer': 'S1413890737.919567,VS0,VE0',
+377 silly registry.get     vary: 'Accept',
+377 silly registry.get     'content-length': '0',
+377 silly registry.get     'keep-alive': 'timeout=10, max=50',
+377 silly registry.get     connection: 'Keep-Alive' } ]
+378 verbose etag https://registry.npmjs.org/esprima from cache
+379 silly lockFile 71dc3a4c-esprima-1-0-3 esprima@1.0.3
+380 silly lockFile 71dc3a4c-esprima-1-0-3 esprima@1.0.3
+381 http 304 https://registry.npmjs.org/mkdirp
+382 silly registry.get cb [ 304,
+382 silly registry.get   { date: 'Tue, 21 Oct 2014 11:25:37 GMT',
+382 silly registry.get     server: 'Apache',
+382 silly registry.get     via: '1.1 varnish',
+382 silly registry.get     'last-modified': 'Tue, 21 Oct 2014 11:25:37 GMT',
+382 silly registry.get     'cache-control': 'max-age=60',
+382 silly registry.get     etag: '"EX7OC1GRA0A9TYJRE9RXASM1I"',
+382 silly registry.get     age: '0',
+382 silly registry.get     'x-served-by': 'cache-ams4123-AMS',
+382 silly registry.get     'x-cache': 'HIT',
+382 silly registry.get     'x-cache-hits': '1',
+382 silly registry.get     'x-timer': 'S1413890737.970578,VS0,VE0',
+382 silly registry.get     vary: 'Accept',
+382 silly registry.get     'content-length': '0',
+382 silly registry.get     'keep-alive': 'timeout=10, max=49',
+382 silly registry.get     connection: 'Keep-Alive' } ]
+383 verbose etag https://registry.npmjs.org/mkdirp from cache
+384 silly lockFile 67d2df2a-mkdirp-0-3-5 mkdirp@0.3.5
+385 silly lockFile 67d2df2a-mkdirp-0-3-5 mkdirp@0.3.5
+386 http 200 https://registry.npmjs.org/coffee-script
+387 silly registry.get cb [ 200,
+387 silly registry.get   { date: 'Tue, 21 Oct 2014 11:25:37 GMT',
+387 silly registry.get     server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+387 silly registry.get     etag: '"1JGY2X2Z6RRUJJUL52WPLZ8SR"',
+387 silly registry.get     'content-type': 'application/json',
+387 silly registry.get     'cache-control': 'max-age=60',
+387 silly registry.get     'content-length': '32437',
+387 silly registry.get     'accept-ranges': 'bytes',
+387 silly registry.get     via: '1.1 varnish',
+387 silly registry.get     age: '25',
+387 silly registry.get     'x-served-by': 'cache-ams4131-AMS',
+387 silly registry.get     'x-cache': 'HIT',
+387 silly registry.get     'x-cache-hits': '1',
+387 silly registry.get     'x-timer': 'S1413890737.951856,VS0,VE0',
+387 silly registry.get     vary: 'Accept',
+387 silly registry.get     'keep-alive': 'timeout=10, max=50',
+387 silly registry.get     connection: 'Keep-Alive' } ]
+388 silly lockFile a0d97ffe-e-script-coffee-script-1-6-3-tgz https://registry.npmjs.org/coffee-script/-/coffee-script-1.6.3.tgz
+389 verbose lock https://registry.npmjs.org/coffee-script/-/coffee-script-1.6.3.tgz C:\Users\Stefano\AppData\Roaming\npm-cache\a0d97ffe-e-script-coffee-script-1-6-3-tgz.lock
+390 verbose addRemoteTarball [ 'https://registry.npmjs.org/coffee-script/-/coffee-script-1.6.3.tgz',
+390 verbose addRemoteTarball   '6355d32cf1b04cdff6b484e5e711782b2f0c39be' ]
+391 http 304 https://registry.npmjs.org/fs-tools
+392 silly registry.get cb [ 304,
+392 silly registry.get   { date: 'Tue, 21 Oct 2014 11:25:37 GMT',
+392 silly registry.get     server: 'Apache',
+392 silly registry.get     via: '1.1 varnish',
+392 silly registry.get     'last-modified': 'Tue, 21 Oct 2014 11:25:38 GMT',
+392 silly registry.get     'cache-control': 'max-age=60',
+392 silly registry.get     etag: '"9F0AV54EK2YA753W99Q1KT2JL"',
+392 silly registry.get     age: '0',
+392 silly registry.get     'x-served-by': 'cache-ams4133-AMS',
+392 silly registry.get     'x-cache': 'HIT',
+392 silly registry.get     'x-cache-hits': '1',
+392 silly registry.get     'x-timer': 'S1413890737.939736,VS0,VE93',
+392 silly registry.get     vary: 'Accept',
+392 silly registry.get     'content-length': '0',
+392 silly registry.get     'keep-alive': 'timeout=10, max=50',
+392 silly registry.get     connection: 'Keep-Alive' } ]
+393 verbose etag https://registry.npmjs.org/fs-tools from cache
+394 info retry fetch attempt 1 at 13:25:35
+395 verbose fetch to= C:\Users\Stefano\AppData\Local\Temp\npm-8612-biynItlL\registry.npmjs.org\coffee-script\-\coffee-script-1.6.3.tgz
+396 http GET https://registry.npmjs.org/coffee-script/-/coffee-script-1.6.3.tgz
+397 silly lockFile cfa38223-fs-tools-0-2-10 fs-tools@0.2.10
+398 silly lockFile cfa38223-fs-tools-0-2-10 fs-tools@0.2.10
+399 warn `git config --get remote.origin.url` returned wrong result (git://github.com/jsdoc3/jsdoc.git) undefined
+399 warn `git config --get remote.origin.url` returned wrong result (git://github.com/jsdoc3/jsdoc.git) undefined
+400 http 304 https://registry.npmjs.org/escodegen
+401 silly registry.get cb [ 304,
+401 silly registry.get   { date: 'Tue, 21 Oct 2014 11:25:38 GMT',
+401 silly registry.get     server: 'Apache',
+401 silly registry.get     via: '1.1 varnish',
+401 silly registry.get     'last-modified': 'Tue, 21 Oct 2014 11:25:38 GMT',
+401 silly registry.get     'cache-control': 'max-age=60',
+401 silly registry.get     etag: '"8W9RY3PVAE61NYXTVS0B19SH"',
+401 silly registry.get     age: '28',
+401 silly registry.get     'x-served-by': 'cache-ams4133-AMS',
+401 silly registry.get     'x-cache': 'HIT',
+401 silly registry.get     'x-cache-hits': '1',
+401 silly registry.get     'x-timer': 'S1413890738.093802,VS0,VE0',
+401 silly registry.get     vary: 'Accept',
+401 silly registry.get     'content-length': '0',
+401 silly registry.get     'keep-alive': 'timeout=10, max=49',
+401 silly registry.get     connection: 'Keep-Alive' } ]
+402 verbose etag https://registry.npmjs.org/escodegen from cache
+403 http 200 https://registry.npmjs.org/string
+404 silly registry.get cb [ 200,
+404 silly registry.get   { date: 'Tue, 21 Oct 2014 11:25:37 GMT',
+404 silly registry.get     server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+404 silly registry.get     etag: '"DFK7DSQ0OWASAMQ33O2SM47RD"',
+404 silly registry.get     'content-type': 'application/json',
+404 silly registry.get     'cache-control': 'max-age=60',
+404 silly registry.get     'content-length': '67939',
+404 silly registry.get     'accept-ranges': 'bytes',
+404 silly registry.get     via: '1.1 varnish',
+404 silly registry.get     age: '33',
+404 silly registry.get     'x-served-by': 'cache-ams4126-AMS',
+404 silly registry.get     'x-cache': 'HIT',
+404 silly registry.get     'x-cache-hits': '1',
+404 silly registry.get     'x-timer': 'S1413890737.958197,VS0,VE0',
+404 silly registry.get     vary: 'Accept',
+404 silly registry.get     'keep-alive': 'timeout=10, max=50',
+404 silly registry.get     connection: 'Keep-Alive' } ]
+405 silly lockFile dc9e6e0a-pmjs-org-string-string-1-5-0-tgz https://registry.npmjs.org/string/-/string-1.5.0.tgz
+406 verbose lock https://registry.npmjs.org/string/-/string-1.5.0.tgz C:\Users\Stefano\AppData\Roaming\npm-cache\dc9e6e0a-pmjs-org-string-string-1-5-0-tgz.lock
+407 http 200 https://registry.npmjs.org/commander
+408 silly registry.get cb [ 200,
+408 silly registry.get   { date: 'Tue, 21 Oct 2014 11:25:38 GMT',
+408 silly registry.get     server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+408 silly registry.get     etag: '"2JW28TVBG3SUV428NZMGZON2B"',
+408 silly registry.get     'content-type': 'application/json',
+408 silly registry.get     'cache-control': 'max-age=60',
+408 silly registry.get     'content-length': '42828',
+408 silly registry.get     'accept-ranges': 'bytes',
+408 silly registry.get     via: '1.1 varnish',
+408 silly registry.get     age: '48',
+408 silly registry.get     'x-served-by': 'cache-ams4123-AMS',
+408 silly registry.get     'x-cache': 'HIT',
+408 silly registry.get     'x-cache-hits': '3',
+408 silly registry.get     'x-timer': 'S1413890738.024751,VS0,VE0',
+408 silly registry.get     vary: 'Accept',
+408 silly registry.get     'keep-alive': 'timeout=10, max=48',
+408 silly registry.get     connection: 'Keep-Alive' } ]
+409 verbose addRemoteTarball [ 'https://registry.npmjs.org/string/-/string-1.5.0.tgz',
+409 verbose addRemoteTarball   '9861da7f3a92b9fa114b15da086857b528a7c587' ]
+410 info retry fetch attempt 1 at 13:25:35
+411 verbose fetch to= C:\Users\Stefano\AppData\Local\Temp\npm-8612-biynItlL\registry.npmjs.org\string\-\string-1.5.0.tgz
+412 silly lockFile 8d3a870b-rg-commander-commander-1-1-1-tgz https://registry.npmjs.org/commander/-/commander-1.1.1.tgz
+413 verbose lock https://registry.npmjs.org/commander/-/commander-1.1.1.tgz C:\Users\Stefano\AppData\Roaming\npm-cache\8d3a870b-rg-commander-commander-1-1-1-tgz.lock
+414 http GET https://registry.npmjs.org/string/-/string-1.5.0.tgz
+415 verbose addRemoteTarball [ 'https://registry.npmjs.org/commander/-/commander-1.1.1.tgz',
+415 verbose addRemoteTarball   '50d1651868ae60eccff0a2d9f34595376bc6b041' ]
+416 http 200 https://registry.npmjs.org/less
+417 silly registry.get cb [ 200,
+417 silly registry.get   { date: 'Tue, 21 Oct 2014 11:25:38 GMT',
+417 silly registry.get     server: 'CouchDB/1.5.0 (Erlang OTP/R14B04)',
+417 silly registry.get     etag: '"9BF2H84RBFETXM0LDPN4BYGTD"',
+417 silly registry.get     'content-type': 'application/json',
+417 silly registry.get     'cache-control': 'max-age=60',
+417 silly registry.get     'content-length': '67631',
+417 silly registry.get     'accept-ranges': 'bytes',
+417 silly registry.get     via: '1.1 varnish',
+417 silly registry.get     age: '55',
+417 silly registry.get     'x-served-by': 'cache-ams4131-AMS',
+417 silly registry.get     'x-cache': 'HIT',
+417 silly registry.get     'x-cache-hits': '1',
+417 silly registry.get     'x-timer': 'S1413890738.067340,VS0,VE0',
+417 silly registry.get     vary: 'Accept',
+417 silly registry.get     'keep-alive': 'timeout=10, max=49',
+417 silly registry.get     connection: 'Keep-Alive' } ]
+418 silly lockFile aaffc05a-escodegen-0-0-22 escodegen@0.0.22
+419 silly lockFile aaffc05a-escodegen-0-0-22 escodegen@0.0.22
+420 info retry fetch attempt 1 at 13:25:35
+421 verbose fetch to= C:\Users\Stefano\AppData\Local\Temp\npm-8612-biynItlL\registry.npmjs.org\commander\-\commander-1.1.1.tgz
+422 http GET https://registry.npmjs.org/commander/-/commander-1.1.1.tgz
+423 silly lockFile 2bc32ade-ry-npmjs-org-less-less-1-4-1-tgz https://registry.npmjs.org/less/-/less-1.4.1.tgz
+424 verbose lock https://registry.npmjs.org/less/-/less-1.4.1.tgz C:\Users\Stefano\AppData\Roaming\npm-cache\2bc32ade-ry-npmjs-org-less-less-1-4-1-tgz.lock
+425 verbose addRemoteTarball [ 'https://registry.npmjs.org/less/-/less-1.4.1.tgz',
+425 verbose addRemoteTarball   '4a93e97abb5c33514434a8e80749fe9f5eb871f6' ]
+426 http 304 https://registry.npmjs.org/LiveScript
+427 silly registry.get cb [ 304,
+427 silly registry.get   { date: 'Tue, 21 Oct 2014 11:25:38 GMT',
+427 silly registry.get     server: 'Apache',
+427 silly registry.get     via: '1.1 varnish',
+427 silly registry.get     'last-modified': 'Tue, 21 Oct 2014 11:25:38 GMT',
+427 silly registry.get     'cache-control': 'max-age=60',
+427 silly registry.get     etag: '"BOVN5M3XFRR9CVZF4X1E7W5TO"',
+427 silly registry.get     age: '0',
+427 silly registry.get     'x-served-by': 'cache-ams4133-AMS',
+427 silly registry.get     'x-cache': 'HIT',
+427 silly registry.get     'x-cache-hits': '1',
+427 silly registry.get     'x-timer': 'S1413890738.171886,VS0,VE92',
+427 silly registry.get     vary: 'Accept',
+427 silly registry.get     'content-length': '0',
+427 silly registry.get     'keep-alive': 'timeout=10, max=48',
+427 silly registry.get     connection: 'Keep-Alive' } ]
+428 verbose etag https://registry.npmjs.org/LiveScript from cache
+429 http 200 https://registry.npmjs.org/fs-walk
+430 silly registry.get cb [ 200,
+430 silly registry.get   { date: 'Tue, 21 Oct 2014 11:25:38 GMT',
+430 silly registry.get     server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+430 silly registry.get     etag: '"721SWFPH4LDXFVVVDXTJUV5H0"',
+430 silly registry.get     'content-type': 'application/json',
+430 silly registry.get     'cache-control': 'max-age=60',
+430 silly registry.get     'content-length': '4315',
+430 silly registry.get     'accept-ranges': 'bytes',
+430 silly registry.get     via: '1.1 varnish',
+430 silly registry.get     age: '0',
+430 silly registry.get     'x-served-by': 'cache-ams4130-AMS',
+430 silly registry.get     'x-cache': 'MISS',
+430 silly registry.get     'x-cache-hits': '0',
+430 silly registry.get     'x-timer': 'S1413890737.906581,VS0,VE374',
+430 silly registry.get     vary: 'Accept',
+430 silly registry.get     'keep-alive': 'timeout=10, max=50',
+430 silly registry.get     connection: 'Keep-Alive' } ]
+431 info retry fetch attempt 1 at 13:25:35
+432 verbose fetch to= C:\Users\Stefano\AppData\Local\Temp\npm-8612-biynItlL\registry.npmjs.org\less\-\less-1.4.1.tgz
+433 http 200 https://registry.npmjs.org/coffee-script/-/coffee-script-1.6.3.tgz
+434 http GET https://registry.npmjs.org/less/-/less-1.4.1.tgz
+435 http 200 https://registry.npmjs.org/jade
+436 silly registry.get cb [ 200,
+436 silly registry.get   { date: 'Tue, 21 Oct 2014 11:25:38 GMT',
+436 silly registry.get     server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+436 silly registry.get     etag: '"574TTA7U5CJE1ZXHJE2S286DB"',
+436 silly registry.get     'content-type': 'application/json',
+436 silly registry.get     'cache-control': 'max-age=60',
+436 silly registry.get     'content-length': '127439',
+436 silly registry.get     'accept-ranges': 'bytes',
+436 silly registry.get     via: '1.1 varnish',
+436 silly registry.get     age: '43',
+436 silly registry.get     'x-served-by': 'cache-ams4126-AMS',
+436 silly registry.get     'x-cache': 'HIT',
+436 silly registry.get     'x-cache-hits': '1',
+436 silly registry.get     'x-timer': 'S1413890738.180851,VS0,VE1',
+436 silly registry.get     vary: 'Accept',
+436 silly registry.get     'keep-alive': 'timeout=10, max=49',
+436 silly registry.get     connection: 'Keep-Alive' } ]
+437 silly lockFile 6aebcc5d-js-org-fs-walk-fs-walk-0-0-1-tgz https://registry.npmjs.org/fs-walk/-/fs-walk-0.0.1.tgz
+438 verbose lock https://registry.npmjs.org/fs-walk/-/fs-walk-0.0.1.tgz C:\Users\Stefano\AppData\Roaming\npm-cache\6aebcc5d-js-org-fs-walk-fs-walk-0-0-1-tgz.lock
+439 verbose addRemoteTarball [ 'https://registry.npmjs.org/fs-walk/-/fs-walk-0.0.1.tgz',
+439 verbose addRemoteTarball   'f7fc91c3ae1eead07c998bc5d0dd41f2dbebd335' ]
+440 silly lockFile 24efb250-y-npmjs-org-jade-jade-0-34-1-tgz https://registry.npmjs.org/jade/-/jade-0.34.1.tgz
+441 verbose lock https://registry.npmjs.org/jade/-/jade-0.34.1.tgz C:\Users\Stefano\AppData\Roaming\npm-cache\24efb250-y-npmjs-org-jade-jade-0-34-1-tgz.lock
+442 info retry fetch attempt 1 at 13:25:35
+443 verbose fetch to= C:\Users\Stefano\AppData\Local\Temp\npm-8612-biynItlL\registry.npmjs.org\fs-walk\-\fs-walk-0.0.1.tgz
+444 silly lockFile 457c4be1-LiveScript-1-2-0 LiveScript@1.2.0
+445 silly lockFile 457c4be1-LiveScript-1-2-0 LiveScript@1.2.0
+446 http GET https://registry.npmjs.org/fs-walk/-/fs-walk-0.0.1.tgz
+447 verbose addRemoteTarball [ 'https://registry.npmjs.org/jade/-/jade-0.34.1.tgz',
+447 verbose addRemoteTarball   '6cb1f0928adfe9be7323d0b57e507e5c3c70f650' ]
+448 info retry fetch attempt 1 at 13:25:35
+449 verbose fetch to= C:\Users\Stefano\AppData\Local\Temp\npm-8612-biynItlL\registry.npmjs.org\jade\-\jade-0.34.1.tgz
+450 http GET https://registry.npmjs.org/jade/-/jade-0.34.1.tgz
+451 silly lockFile a0d97ffe-e-script-coffee-script-1-6-3-tgz https://registry.npmjs.org/coffee-script/-/coffee-script-1.6.3.tgz
+452 silly lockFile a0d97ffe-e-script-coffee-script-1-6-3-tgz https://registry.npmjs.org/coffee-script/-/coffee-script-1.6.3.tgz
+453 silly lockFile 15ab88ca-coffee-script-1-6-3 coffee-script@1.6.3
+454 silly lockFile 15ab88ca-coffee-script-1-6-3 coffee-script@1.6.3
+455 http 200 https://registry.npmjs.org/commander/-/commander-1.1.1.tgz
+456 silly lockFile 8d3a870b-rg-commander-commander-1-1-1-tgz https://registry.npmjs.org/commander/-/commander-1.1.1.tgz
+457 silly lockFile 8d3a870b-rg-commander-commander-1-1-1-tgz https://registry.npmjs.org/commander/-/commander-1.1.1.tgz
+458 http 200 https://registry.npmjs.org/jade/-/jade-0.34.1.tgz
+459 silly lockFile e890879a-commander-1-1-1 commander@1.1.1
+460 silly lockFile e890879a-commander-1-1-1 commander@1.1.1
+461 http 200 https://registry.npmjs.org/less/-/less-1.4.1.tgz
+462 http 200 https://registry.npmjs.org/fs-walk/-/fs-walk-0.0.1.tgz
+463 silly lockFile 6aebcc5d-js-org-fs-walk-fs-walk-0-0-1-tgz https://registry.npmjs.org/fs-walk/-/fs-walk-0.0.1.tgz
+464 silly lockFile 6aebcc5d-js-org-fs-walk-fs-walk-0-0-1-tgz https://registry.npmjs.org/fs-walk/-/fs-walk-0.0.1.tgz
+465 silly lockFile 24efb250-y-npmjs-org-jade-jade-0-34-1-tgz https://registry.npmjs.org/jade/-/jade-0.34.1.tgz
+466 silly lockFile 24efb250-y-npmjs-org-jade-jade-0-34-1-tgz https://registry.npmjs.org/jade/-/jade-0.34.1.tgz
+467 silly lockFile e9305758-fs-walk-0-0-1 fs-walk@0.0.1
+468 silly lockFile e9305758-fs-walk-0-0-1 fs-walk@0.0.1
+469 silly lockFile 5e424f25-jade-0-34-1 jade@0.34.1
+470 silly lockFile 5e424f25-jade-0-34-1 jade@0.34.1
+471 error git clone git://github.com/jsdoc3/jsdoc.git undefined
+471 error git clone git://github.com/jsdoc3/jsdoc.git undefined
+472 silly lockFile 0dba5517-git-github-com-jsdoc3-jsdoc-git git://github.com/jsdoc3/jsdoc.git
+473 silly lockFile 0dba5517-git-github-com-jsdoc3-jsdoc-git git://github.com/jsdoc3/jsdoc.git
+474 verbose about to build D:\eurekaa\progetti\eurekaa.web\node_modules\continuum.js
+475 verbose node_modules\continuum.js unbuild
+476 info preuninstall continuum.js@0.1.7
+477 info uninstall continuum.js@0.1.7
+478 verbose true,D:\eurekaa\progetti\eurekaa.web\node_modules,D:\eurekaa\progetti\eurekaa.web\node_modules unbuild continuum.js@0.1.7
+479 verbose D:\eurekaa\progetti\eurekaa.web\node_modules\.bin,[object Object] binRoot
+480 info postuninstall continuum.js@0.1.7
+481 error not found: git
+482 error Failed using git.
+482 error This is most likely not a problem with npm itself.
+482 error Please check if you have git installed and in your PATH.
+483 error System Windows_NT 6.1.7601
+484 error command "C:\\Program Files\\nodejs\\\\node.exe" "C:\\Program Files\\nodejs\\node_modules\\npm\\bin\\npm-cli.js" "install"
+485 error cwd D:\eurekaa\progetti\eurekaa.web
+486 error node -v v0.10.30
+487 error npm -v 1.4.21
+488 error code ENOGIT
+489 verbose exit [ 1, true ]

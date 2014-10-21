@@ -1,8 +1,9 @@
 {
-    "home": "home",
-    "who": "who i am",
-    "curriculum": "curriculum",
-    "projects": "projects",
-    "contacts": "contacts"
+    "home": {
+        "label": "home",
+        "link": "#home",
+        "icon": "media/images/avatar.png"
+    }
 }
+
 
