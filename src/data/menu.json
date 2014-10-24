@@ -1,7 +1,51 @@
 {
     "home": {
         "label": "home",
+        "class": "home",
         "link": "#home",
+        "color": "#FFBD59",
+        "icon": "media/images/avatar.png"
+    },
+    "who": {
+        "label": "who i am",
+        "link": "#who",
+        "class": "who",
+        "color": "#FFDE59",
+        "icon": "media/images/avatar.png"
+    },
+    "curriculum": {
+        "label": "curriculum",
+        "class": "curriculum",
+        "link": "#curriculum",
+        "color": "#C7EE53",
+        "icon": "media/images/avatar.png"
+    },
+    "open_source": {
+        "label": "open_source",
+        "class": "open_source",
+        "link": "#open_source",
+        "color": "#68DE68",
+        "icon": "media/images/avatar.png"
+    },
+    "crowd_funds": {
+        "label": "crowd_funds",
+        "class": "crowd_funds",
+        "link": "#crowd_funds",
+        "color": "#73C3DE",
+        "icon": "media/images/avatar.png"
+    },
+    "projects": {
+        "label": "projects",
+        "class": "projects",
+        "link": "#projects",
+        "color": "#739FDE",
+        "icon": "media/images/avatar.png"
+    },
+    "contacts": {
+        "label": "contacts",
+        "class": "contacts",
+        "link": "#contacts",
+        "color": "#8573DE",
         "icon": "media/images/avatar.png"
     }
 }

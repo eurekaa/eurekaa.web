@@ -4,3 +4,5 @@ node_modules
 psd
 tmp
 compass.rb
+/*.log
+doc

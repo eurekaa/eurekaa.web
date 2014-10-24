@@ -16,7 +16,7 @@
   },
   "preferGlobal": true,
   "dependencies": {
-      "continuum.js": "*"
+      
   },
   "readmeFilename": "README.md",
   "_id": "eurekaa.web@0.1",
