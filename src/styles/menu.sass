@@ -3,125 +3,96 @@
 @import compass/layout
 @import compass/typography
 @import compass/css3/transition
+@import compass/utilities/color
+
+@import base
 
 nav.main
-   $color: #222222
-   $width: 40
-   +box-sizing(border-box)
+   $color: $color_dark
+   $width: 50px
+   $height: 50px
    display: block
    width: $width
-   +stretch-y(10)
-   +background-image(linear-gradient(to left, darken($color, 4%), $color 40%, $color 50%, darken($color, 4%)))
-   box-shadow: 1px 0 2px #000
+   +stretch-y()
+   +background-image(linear-gradient(to left, lighten($color, 2%) 48%, darken($color, 2%) 52%, darken($color, 2%)))
+   +box-sizing(border-box)
    margin-left: 10px
-   margin-bottom: 10px
-
+   
    li
-      border-bottom: 1px solid lighten($color, 5%)
+      +box-sizing(border-box)
+      border: 1px solid darken($color, 5%)
+      border-top: 1px solid lighten($color, 5%)
 
-   a
-      position: relative    
+   a.quiet
+      position: relative
       display: block
       margin: 0
-      width: 100%
-      height: 70px
+      width: $width - 2
+      height: $height
+      font-size: 18pt
+      +background-image(linear-gradient(to bottom, lighten($color, 2%) 50%, darken($color, 2%) 51%, darken($color, 2%)))
       +box-sizing(border-box)
-
-      div
+    
+      div.quiet
          display: block
          position: absolute
-         width: 100%
-         height: 100%
+         width: $width - 2
+         height: $height
+         padding: 10px 5px 10px 5px
+         text-align: center
          +transition(.2s)
          +transform-origin(0, $width, 0)
-
-         img
-            width: 60px
-            height: 60px
-
-      div.active
-         @extend div
-         transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1)
-         -webkit-transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1)
+         +box-sizing(border-box)
+         color: contrast-color($color)
          left: 0
-
-      div.hover
-         @extend div
+         
+      div.active
+         @extend div.quiet
          -webkit-transform: matrix3d(0, 0, -1, 0.002324, 0, 1, 0, 0, 1, 0, 0, 0, 0, 0, 0, 1)
          transform: matrix3d(0, 0, -1, 0.002324, 0, 1, 0, 0, 1, 0, 0, 0, 0, 0, 0, 1)
-         left: 100%
-         +box-sizing(border-box)
-         +border-radius(4px)
+         +border-radius(5px)
          border: 2px solid $color
+         left: $width
 
-   a:hover
-      @extend a
+   a.quiet:hover
+      @extend a.quiet
+      
+      div.quiet
+         @extend div.quiet
+         transform: matrix3d(0, 0, 1, 0, 0, 1, 0, 0, -1, 0, 0, 0, - strip-units($width), 0, 0, 1)
+         -webkit-transform: matrix3d(0, 0, 1, 0, 0, 1, 0, 0, -1, 0, 0, 0, - strip-units($width), 0, 0, 1)
 
       div.active
-         transform: matrix3d(0, 0, 1, 0, 0, 1, 0, 0, -1, 0, 0, 0, -$width, 0, 0, 1)
-         -webkit-transform: matrix3d(0, 0, 1, 0, 0, 1, 0, 0, -1, 0, 0, 0, -$width, 0, 0, 1)
-
-      div.hover
-         -webkit-transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, -0.002324, -$width, 0, 0, 1)
-         transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, -0.002324, -$width, 0, 0, 1)
-
+         @extend div.active
+         -webkit-transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, -0.002324, - strip-units($width), 0, 0, 1)
+         transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, -0.002324, - strip-units($width), 0, 0, 1)
    
-   a .active .text, a:hover .active .text, a .hover .text, a:hover .hover .text
-      display: block
-      position: absolute
-      width: 100%
-      height: 100%
-      +transition(.2s)
-      +transform-origin(0, $width, 0)
-      font-family: benton-regular
-      color: white
-      -webkit-transform: rotate(270deg)
-      -moz-transform: rotate(270deg)
-      -o-transform: rotate(270deg)
-      transform: rotate(270deg)
-   
+   a.active
+      @extend a.quiet
+      
+      div.active
+         @extend div.active 
+         left: $width
+         
+      
+      
    // add custom color for each link. 
-   @mixin link_evidence($link_color)
+   @import ../data/menu.json
+   a.quiet::before
       display: block
-      width: 10px
-      height: 70px
+      width: 5px
+      height: $height
       position: absolute
-      left: -8px
       content: " "
-      color: white
-      border-left: 5px solid $link_color
-
-   a.home::before
-      +link_evidence(#FFBD59)
-   a.home .hover
-      background-color: #FFBD59
-
-   a.who::before
-      +link_evidence(#FFDE59)
-   a.who .hover
-      background-color: #FFDE59
-
-   a.curriculum::before
-      +link_evidence(#C7EE53)
-   a.curriculum .hover
-      background-color: #C7EE53
-
-   a.open_source::before
-      +link_evidence(#68DE68)
-   a.open_source .hover
-      background-color: #68DE68
-
-   a.crowd_funds::before
-      +link_evidence(#73C3DE)
-   a.crowd_funds .hover
-      background-color: #73C3DE
-
-   a.projects::before
-      +link_evidence(#739FDE)
-   a.projects .hover
-      background-color: #739FDE
-
-   a.contacts::before
-      +link_evidence(#8573DE)
-   a.contacts .hover
-      background-color: #8573DE
+      left: -7px
+      
+   @each $item in $main
+      $class: map_get($item, class) 
+      $link_color: map_get($item, color)
+      li.#{$class} a.quiet:hover .active, li.#{$class} a.quiet .active
+         +background-image(linear-gradient(to bottom, lighten($link_color, 3%) 50%, darken($link_color, 3%) 51%, darken($link_color, 3%)))
+         color: contrast-color($link_color)
+         
+      li.#{$class} a.quiet::before
+         +background-image(linear-gradient(to bottom, lighten($link_color, 3%) 50%, darken($link_color, 3%) 51%, darken($link_color, 3%)))
+         

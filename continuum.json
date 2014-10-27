@@ -26,7 +26,7 @@
             "sass": {
                 "compass": {
                     "options": {
-                        "require": ["susy"],
+                        "require": ["susy", "sass-json-vars"],
                         "cache_path": "tmp/cache/compass",
                         "relative_assets": true,
                         "fonts_path": "media/fonts"

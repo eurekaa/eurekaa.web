@@ -1,53 +1,53 @@
 {
-    "home": {
-        "label": "home",
-        "class": "home",
-        "link": "#home",
-        "color": "#FFBD59",
-        "icon": "media/images/avatar.png"
+  "main": [
+    {
+      "label": "home",
+      "class": "home",
+      "link": "#home",
+      "color": "#FFBD59",
+      "icon": "home"
     },
-    "who": {
-        "label": "who i am",
-        "link": "#who",
-        "class": "who",
-        "color": "#FFDE59",
-        "icon": "media/images/avatar.png"
+    {
+      "label": "profile",
+      "link": "#profile",
+      "class": "profile",
+      "color": "#FFDE59",
+      "icon": "profile"
     },
-    "curriculum": {
-        "label": "curriculum",
-        "class": "curriculum",
-        "link": "#curriculum",
-        "color": "#C7EE53",
-        "icon": "media/images/avatar.png"
+    {
+      "label": "projects",
+      "class": "projects",
+      "link": "#projects",
+      "color": "#C7EE53",
+      "icon": "items"
     },
-    "open_source": {
-        "label": "open_source",
-        "class": "open_source",
-        "link": "#open_source",
-        "color": "#68DE68",
-        "icon": "media/images/avatar.png"
+    {
+      "label": "contacts",
+      "class": "contacts",
+      "link": "#contacts",
+      "color": "#68DE68",
+      "icon": "contacts"
     },
-    "crowd_funds": {
-        "label": "crowd_funds",
-        "class": "crowd_funds",
-        "link": "#crowd_funds",
-        "color": "#73C3DE",
-        "icon": "media/images/avatar.png"
+    {
+      "label": "email",
+      "class": "email",
+      "link": "#email",
+      "color": "#73C3DE",
+      "icon": "mail"
     },
-    "projects": {
-        "label": "projects",
-        "class": "projects",
-        "link": "#projects",
-        "color": "#739FDE",
-        "icon": "media/images/avatar.png"
+    {
+      "label": "twitter",
+      "class": "twitter",
+      "link": "#twitter",
+      "color": "#739FDE",
+      "icon": "twitter"
     },
-    "contacts": {
-        "label": "contacts",
-        "class": "contacts",
-        "link": "#contacts",
-        "color": "#8573DE",
-        "icon": "media/images/avatar.png"
+    {
+      "label": "facebook",
+      "class": "facebook",
+      "link": "#facebook",
+      "color": "#8573DE",
+      "icon": "facebook"
     }
+  ]
 }
-
-

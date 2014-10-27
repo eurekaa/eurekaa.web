@@ -1,26 +1,40 @@
 
 require(ref='menu', href='data/menu.json')
-mixin menu3d(name)
-    nav(class=name): ul: each item in menu
-        li: a(class=item.class, title=item.label, href=item.link, data-color=item.color)
-            .active: .text: =item.label
-            .hover: .text: =item.label
+mixin menu(name)
+    nav(class=name): ul: each item in menu[name]
+        li(class=item.class): a(class='quiet', title=item.label, href=item.link)
+            .quiet(class='icon-' + item.icon)
+            .active(class='icon-' + item.icon)
 
 html
     title eurekaa
     meta(name='viewport', right='width=device-width', initial-scale='1.0')
     meta(charset='utf-8')
+    
     script(src='scripts/libs/require.js', data-main='scripts/index')
+        
     link(rel='stylesheet', type='text/css', href='styles/fonts.css')
+    link(rel='stylesheet', type='text/css', href='styles/icons.css')
     link(rel='stylesheet', type='text/css', href='styles/index.css')
     link(rel='stylesheet', type='text/css', href='styles/menu.css')
+    
     body
-        header: +menu3d('main')
+        header
+            +menu('main')
+            .logo: img(src='media/images/logo.png')
+            .helper
+        
         main
-            img(src='media/images/logo.png')
+            section.home
+                
+                    
+                
             
         footer
             
+        
+        
+        
             
             
             
