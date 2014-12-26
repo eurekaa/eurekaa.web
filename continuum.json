@@ -29,7 +29,8 @@
                         "require": ["susy", "sass-json-vars"],
                         "cache_path": "tmp/cache/compass",
                         "relative_assets": true,
-                        "fonts_path": "media/fonts"
+                        "fonts_path": "../media/fonts",
+                        "images_path": "media/images"
                     }
                 }
             }

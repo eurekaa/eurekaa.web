@@ -1,0 +1,29 @@
+@import compass/css3
+
+// layout.
+$mobile_width: 320px
+$menu_icon_width: 45px
+$menu_icon_height: $menu_icon_width
+$menu_gutter_width: 5px
+$menu_gutter_height: $menu_icon_height
+$menu_label_width: $mobile_width - $menu_icon_width - $menu_gutter_width
+$menu_label_height: $menu_icon_height
+$menu_width: $menu_icon_width + $menu_gutter_width + $menu_label_width
+
+// colors.
+$dark_color: #333333
+$darker_color: darken($dark_color, 10%)
+$light_color: #DEDEDE
+$contrasted-dark-default: $dark_color
+$contrasted-light-default: $light_color
+
+
+// functions.
+@function strip-units($number)
+   @return $number / ($number * 0 + 1)
+   
+// mixins.
+@mixin border-shadow()
+   border: 1px solid darken($dark_color, 7%)
+   +single-box-shadow(0, 0, 0, 1px, lighten($dark_color, 7%), 0)
+

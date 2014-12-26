@@ -13,20 +13,41 @@ require.config
    baseUrl: "."
    urlArgs: 'v=' + (new Date()).getTime()
    paths:
-      domready: "scripts/libs/require.domready"
-      jquery: "scripts/libs/jquery"
-      jquery_ui: "scripts/libs/jquery.ui"
-      lodash: "scripts/libs/lodash"
-   shim: 
-      jquery_ui: 
-         deps: ["jquery"]
-         exports: "$"
+      "async": "scripts/libs/async"
+      "domready": "scripts/libs/require.domready"
+      "jquery": "scripts/libs/jquery"
+      "jquery.ui": "scripts/libs/jquery.ui"
+      "jquery.transit": "scripts/libs/jquery.transit" 
+      "lodash": "scripts/libs/lodash.mixed"
+      "lodash.base": "scripts/libs/lodash"
+      "underscore.string": "scripts/libs/underscore.string"
+      "ui": "scripts/ui/index"
+      "ui.flipcard": "scripts/ui/flipcard"
+   shim:
+      "jquery.ui": deps: ['jquery', 'jquery.transit'], exports: '$'
+      "jquery.transit": deps: ['jquery']
+      "lodash": exports: '_'
+      "underscore.string": deps: ['lodash.base'], exports: '_s'
 
-require ['domready!', 'jquery'], (dom, $)->
+
+
+require ['domready!', 'lodash', 'jquery.ui', 'ui', 'ui.flipcard' ], (dom, _, $, ui)->
    
+   submenu = $('body > header .submenu')
+   submenu.euk_flipcard()
+
    
-   $('nav.main a').on 'click', ->
-      $('nav.main a.active').addClass 'quiet'
-      $('nav.main a.active').removeClass 'active'
-      $(@).removeClass 'quiet'
+   $('nav.menu li').on 'click', ->
+      $('nav.menu li').removeClass 'active'
       $(@).addClass 'active'
+
+      console.log 'section.' + $(@).attr('class') + ' .submenu'
+      submenu.flipcard 'load', $('section.' + $(@).attr('rel') + ' .submenu')
+   
+   $('nav.menu .head .icon').on 'click', -> $('nav.menu').toggleClass 'closed'
+   $('nav.menu .label').on 'click', -> $('nav.menu').toggleClass 'closed' 
+      
+   
+   
+   #$('.submenu figure.back').html($('section.home .submenu').html())
+   

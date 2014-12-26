@@ -5,94 +5,139 @@
 @import compass/css3/transition
 @import compass/utilities/color
 
-@import base
+@import libs/base
 
-nav.main
-   $color: $color_dark
-   $width: 50px
-   $height: 50px
+
+$perspective: 0.002
+$color: $darker_color
+
+nav.menu.closed
    display: block
-   width: $width
+   position: relative
+   left: -($menu_label_width)
+   background-color: $color
    +stretch-y()
-   +background-image(linear-gradient(to left, lighten($color, 2%) 48%, darken($color, 2%) 52%, darken($color, 2%)))
+   +transition(.2s)
    +box-sizing(border-box)
-   margin-left: 10px
+   
+nav.menu
+   @extend nav.menu.closed
+   width: $menu_width
+   left: 0
+   z-index: 9999
+   
+   .head
+      display: block
+      width: $menu_width
+      height: $menu_icon_height
+      
+      .label
+         @extend .head
+         width: $menu_label_width
+         float: left
+      
+      .icon
+         @extend .head
+         width: $menu_icon_width
+         text-align: center
+         font-size: 18pt
+         color: darken(contrast-color($color), 30%)
+         float: right
+         cursor: pointer
+         +box-sizing(border-box)
+         padding-top: 15px
+      
    
    li
+      display: block
+      width: 100%
+      height: $menu_icon_height + 2
       +box-sizing(border-box)
       border: 1px solid darken($color, 5%)
       border-top: 1px solid lighten($color, 5%)
 
-   a.quiet
-      position: relative
-      display: block
-      margin: 0
-      width: $width - 2
-      height: $height
-      font-size: 18pt
-      +background-image(linear-gradient(to bottom, lighten($color, 2%) 50%, darken($color, 2%) 51%, darken($color, 2%)))
-      +box-sizing(border-box)
-    
-      div.quiet
+      .label
          display: block
-         position: absolute
-         width: $width - 2
-         height: $height
-         padding: 10px 5px 10px 5px
-         text-align: center
-         +transition(.2s)
-         +transform-origin(0, $width, 0)
-         +box-sizing(border-box)
+         position: relative
+         width: $menu_label_width
+         height: $menu_label_height
+         float: left
+         margin: 0
+         padding: 0
+         text-indent: 20px
+         line-height: 40pt
+         font-size: 14pt
          color: contrast-color($color)
+         font-family: benton-book
+         text-transform: capitalize
+         +box-sizing(border-box)
+         +background-image(linear-gradient(to bottom, lighten($color, 1%) 50%, darken($color, 1%) 51%, darken($color, 1%)))
+      
+      .gutter
+         @extend .label
+         width: $menu_gutter_width
+       
+      .icon
+         display: block
+         position: relative
+         width: $menu_icon_width - 2
+         height: $menu_icon_height
+         text-align: center
+         font-size: 18pt
+         float: right
+         color: contrast-color($color)
+         +background-image(linear-gradient(to bottom, lighten($color, 1%) 50%, darken($color, 1%) 51%, darken($color, 1%)))
+         +box-sizing(border-box)
+         +transition(.2s)
+         +transform-origin(0, $menu_icon_width, 0)
+    
+      .off
+         @extend .icon
+         position: absolute
+         padding-top: 12px
          left: 0
          
-      div.active
-         @extend div.quiet
-         -webkit-transform: matrix3d(0, 0, -1, 0.002324, 0, 1, 0, 0, 1, 0, 0, 0, 0, 0, 0, 1)
-         transform: matrix3d(0, 0, -1, 0.002324, 0, 1, 0, 0, 1, 0, 0, 0, 0, 0, 0, 1)
+      .on
+         @extend .icon
+         position: absolute
+         padding-top: 12px
+         -webkit-transform: matrix3d(0, 0, -1, $perspective, 0, 1, 0, 0, 1, 0, 0, 0, 0, 0, 0, 1)
+         transform: matrix3d(0, 0, -1, $perspective, 0, 1, 0, 0, 1, 0, 0, 0, 0, 0, 0, 1)
          +border-radius(5px)
          border: 2px solid $color
-         left: $width
-
-   a.quiet:hover
-      @extend a.quiet
-      
-      div.quiet
-         @extend div.quiet
-         transform: matrix3d(0, 0, 1, 0, 0, 1, 0, 0, -1, 0, 0, 0, - strip-units($width), 0, 0, 1)
-         -webkit-transform: matrix3d(0, 0, 1, 0, 0, 1, 0, 0, -1, 0, 0, 0, - strip-units($width), 0, 0, 1)
-
-      div.active
-         @extend div.active
-         -webkit-transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, -0.002324, - strip-units($width), 0, 0, 1)
-         transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, -0.002324, - strip-units($width), 0, 0, 1)
+         left: $menu_icon_width 
    
-   a.active
-      @extend a.quiet
+   
+   li:hover, li.active
+      @extend li
       
-      div.active
-         @extend div.active 
-         left: $width
-         
+      .off
+         @extend .off
+         left: $menu_icon_width
+         +transform-origin(0, 0, 0)
+         transform: matrix3d(0, 0, 1, 0, 0, 1, 0, 0, -1, 0, 0, 0, - strip-units($menu_icon_width), 0, 0, 1)
+         -webkit-transform: matrix3d(0, 0, 1, 0, 0, 1, 0, 0, -1, 0, 0, 0, - strip-units($menu_icon_width), 0, 0, 1)
+
+      .on
+         @extend .on
+         -webkit-transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, - $perspective, - strip-units($menu_icon_width), 0, 0, 1)
+         transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, - $perspective, - strip-units($menu_icon_width), 0, 0, 1)
+
+   
+@import ../data/menu.json
+@each $item in $main
+   $class: map_get($item, class)
+   $link_color: map_get($item, color)
+   
+
+   li.#{$class} .gutter
+      +background-image(linear-gradient(to bottom, lighten($link_color, 3%) 50%, darken($link_color, 3%) 51%, darken($link_color, 3%)))
+
+   li.#{$class} .icon .on, li.#{$class}:hover .icon .on
+      +background-image(linear-gradient(to bottom, lighten($link_color, 3%) 50%, darken($link_color, 3%) 51%, darken($link_color, 3%)))
+      color: contrast-color($link_color)
+   
+   
+   
       
-      
-   // add custom color for each link. 
-   @import ../data/menu.json
-   a.quiet::before
-      display: block
-      width: 5px
-      height: $height
-      position: absolute
-      content: " "
-      left: -7px
-      
-   @each $item in $main
-      $class: map_get($item, class) 
-      $link_color: map_get($item, color)
-      li.#{$class} a.quiet:hover .active, li.#{$class} a.quiet .active
-         +background-image(linear-gradient(to bottom, lighten($link_color, 3%) 50%, darken($link_color, 3%) 51%, darken($link_color, 3%)))
-         color: contrast-color($link_color)
-         
-      li.#{$class} a.quiet::before
-         +background-image(linear-gradient(to bottom, lighten($link_color, 3%) 50%, darken($link_color, 3%) 51%, darken($link_color, 3%)))
-         
+

@@ -1,36 +1,72 @@
-
 require(ref='menu', href='data/menu.json')
-mixin menu(name)
-    nav(class=name): ul: each item in menu[name]
-        li(class=item.class): a(class='quiet', title=item.label, href=item.link)
-            .quiet(class='icon-' + item.icon)
-            .active(class='icon-' + item.icon)
+mixin menu()
+    nav(class='menu closed')
+        .head
+            .label
+            div(class="icon icon-menu")
+        ul: each item in menu['main']
+            li(class=item.class rel=item.class): a(title=item.label, href=item.link)
+                .label \#{ #{item.label} }
+                .gutter
+                .icon
+                    figure(class='icon-' + item.icon + ' off')
+                    figure(class='icon-' + item.icon + ' on')
 
 html
+    
     title eurekaa
-    meta(name='viewport', right='width=device-width', initial-scale='1.0')
     meta(charset='utf-8')
     
     script(src='scripts/libs/require.js', data-main='scripts/index')
         
-    link(rel='stylesheet', type='text/css', href='styles/fonts.css')
-    link(rel='stylesheet', type='text/css', href='styles/icons.css')
+    link(rel='stylesheet', type='text/css', href='styles/libs/fonts.css')
+    link(rel='stylesheet', type='text/css', href='styles/libs/icons-codes.css')
     link(rel='stylesheet', type='text/css', href='styles/index.css')
     link(rel='stylesheet', type='text/css', href='styles/menu.css')
     
+    
     body
-        header
-            +menu('main')
-            .logo: img(src='media/images/logo.png')
-            .helper
         
+        header
+            +menu()
+            .logo
+            .submenu
+                .header
+                    .icon.icon-home
+                    .title home
+                nav: ul
+                    li: a.icon-like Like
+                    li: a.icon-twitter Follow
+                    li: a.icon-github Follow
         main
-            section.home
-                
+        
+        footer
+        
+        // inzio sezioni sito.
+        section.home
+
+            .submenu
+                .header
+                    .icon.icon-home
+                    .title cazzo
+                nav: ul
+                    li: a.icon-like SUca
+                    li: a.icon-twitter SUca
+                    li: a.icon-github SUca
+        
+        section.projects
+            .submenu
+                .header
+                    .icon.icon-home
+                    .title figa
+                nav: ul
+                    li: a.icon-like uuU
+                    li: a.icon-twitter uuU
+                    li: a.icon-github uuU
                     
                 
             
-        footer
+        
             
         
         
